@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="68.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/aimslogo1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="23.0" style="-fx-font-weight: bold;" text="CART" textFill="#5418c4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="14.0" layoutY="60.0" prefHeight="326.0" prefWidth="453.0" style="-fx-border-color: #cccccc;">
+               <children>
+                  <GridPane prefHeight="325.0" prefWidth="391.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.20001220703125" minWidth="10.0" prefWidth="156.4" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="152.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="130.2000244140625" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="103.60001220703126" minHeight="10.0" prefHeight="90.00000610351563" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="126.79999389648438" minHeight="10.0" prefHeight="81.59998168945313" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="153.20000305175785" minHeight="10.0" prefHeight="83.20001831054688" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="153.20000305175785" minHeight="10.0" prefHeight="76.00000000000003" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="86.40003662109375" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.20001220703125" minWidth="10.0" prefWidth="69.59996337890625" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="91.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                                 <image>
+                                    <Image url="@../../img/book.jpg" />
+                                 </image></ImageView>
+                              <GridPane GridPane.columnIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Label alignment="TOP_LEFT" text="Book1" textFill="#412dc7" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                        <Label text="988 đ" textFill="#4c1fc9" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="16.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="VND" textFill="#8553ac" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets top="16.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner prefHeight="26.0" prefWidth="82.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Spinner>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+            <StackPane layoutX="478.0" layoutY="59.0" prefHeight="326.0" prefWidth="197.0">
+               <children>
+                  <GridPane prefHeight="326.0" prefWidth="149.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="103.79999389648438" minHeight="10.0" prefHeight="23.79999389648438" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="248.39998474121097" minHeight="10.0" prefHeight="236.39998474121097" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" style="-fx-background-color: #FF0000; -fx-font-weight: bold;" text="Place order" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <GridPane prefHeight="78.0" prefWidth="190.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.79996337890626" minWidth="10.0" prefWidth="68.8" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.59999999999997" minWidth="10.0" prefWidth="133.59999999999997" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label style="-fx-font-weight: bold;" text="Subtotal:" />
+                              <Label text="Amount:" GridPane.rowIndex="1" />
+                              <Label text="1.234 đ" textFill="#5d15ec" GridPane.columnIndex="1" />
+                              <Label text="5.678 đ" textFill="#4b11ea" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="VAT (10%)" textFill="#df0808" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="8.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+            <Label layoutX="224.0" layoutY="5.0" text="Nguyễn Thế Anh - 20172960" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

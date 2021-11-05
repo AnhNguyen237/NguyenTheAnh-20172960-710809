@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="690.0" style="-fx-background-color: #54563c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="126.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/aimslogo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="291.0" layoutY="121.0" style="-fx-font-weight: bold;" text="ERORR !" textFill="#d9ff02">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="230.0" text="Message" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
