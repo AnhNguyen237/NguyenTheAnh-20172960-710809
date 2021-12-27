@@ -1,4 +1,4 @@
-package entity.media;
+package entity.media.mediaType;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import entity.db.AIMSDB;
+import entity.media.Media;
 
 public class Book extends Media {
 
@@ -136,11 +137,6 @@ public class Book extends Media {
 		} else {
 			throw new SQLException();
 		}
-    }
-
-    @Override
-    public List getAllMedia() {
-        return null;
     }
 
 

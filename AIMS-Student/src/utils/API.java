@@ -19,7 +19,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import entity.payment.CreditCard;
+import entity.payment.PaymentCard;
 import entity.payment.PaymentTransaction;
 
 /**
@@ -98,7 +98,7 @@ public class API {
 		allowMethods("PATCH");
 		
 		// phan 1: setup
-		HttpURLConnection conn = setupConnection(url, "PATCH", token);
+		HttpURLConnection conn = setupConnection(url, "POST", token);
 		
 		// phan 2: gui du lieu
 		Writer writer = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));

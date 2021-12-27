@@ -1,4 +1,6 @@
-package entity.media;
+package entity.media.mediaType;
+
+import entity.media.Media;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -97,11 +99,6 @@ public class CD extends Media {
 		} else {
 			throw new SQLException();
 		}
-    }
-
-    @Override
-    public List getAllMedia() {
-        return null;
     }
 
 }

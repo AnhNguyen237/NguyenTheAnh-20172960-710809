@@ -3,23 +3,24 @@ package controller;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
 import java.util.logging.Logger;
 
 import entity.cart.Cart;
 import entity.cart.CartMedia;
-import common.exception.InvalidDeliveryInfoException;
 import entity.invoice.Invoice;
 import entity.order.Order;
 import entity.order.OrderMedia;
-import views.screen.popup.PopupScreen;
+import shippingFee.ShippingFeeCalculator;
+import shippingFee.calculateShippingFeeStrategy.Strategy1;
 
 /**
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
 public class PlaceOrderController extends BaseController{
+	
+	// use caculate shipping fee strategy 1
+	private ShippingFeeCalculator calculateStrategy = new Strategy1();
 
     /**
      * Just for logging purpose
@@ -115,16 +116,13 @@ public class PlaceOrderController extends BaseController{
     	return false;
     }
     
-
+    
     /**
      * This method calculates the shipping fees of order
      * @param order
      * @return shippingFee
      */
     public int calculateShippingFee(Order order){
-        Random rand = new Random();
-        int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount() );
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
-        return fees;
+        return calculateStrategy.calculateShippingFee(order);
     }
 }
